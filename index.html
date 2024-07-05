@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div id="area">
+
+        <div id="line-right">
+            <span id="head" style="background-image: url(./img/.origin/snsei/sensei\ .png);"> </span>
+            <span id="text">
+                <span id="name">sensai</span>
+                <span id="message">みなさん! sensei我今天要宣布一件事!</span>
+                <span id="message">我是空崎日奈的狗! ***（内容已被清理无法查看）</span>
+            </span>  
+        </div>
+
+        <div id="line-left">
+            <span id="head" style="background-image: url(./img/.origin/hina/avatar0.png);"> </span>
+            <span id="text">
+                <span id="name">空崎日奈</span>
+                <span id="message">///// ////</span>
+                <span id="message">sensei!! 你在说什么啊!</span>
+                <span id="img" style="background-image: url(./img/.origin/hina/1-9.png);"></span>
+            </span>  
+        </div>
+
+        <div id="line-left">
+            <span id="head" style="background-image: url(./img/.origin/ako/avatar.png);"> </span>
+            <span id="text">
+                <span id="name">天雨亚子</span>
+                <span id="message">(为什么不是我!)</span>
+                <span id="img" style="background-image: url(./img/.origin/ako/QQ截图20211116221733.png);"></span>
+            </span>  
+        </div>
+
+        <div id="line-left">
+            <span id="head" style="background-image: url(./img/.origin/Koharu/avatar.png);"> </span>
+            <span id="text">
+                <span id="name">下江小春</span>
+                <span id="img" style="background-image: url(./img/.origin/Koharu/QQ截图20211102192656.png);"></span>
+                <span id="message">死刑！</span>
+            </span>  
+        </div>  
+
+        <div id="line-left">
+            <span id="head" style="background-image: url(./img/.extra/arknights/头像_陈.png);"> </span>
+            <span id="text">
+                <span id="name">陈</span>
+                <span id="message">开门！ 龙门近卫局！</span>
+            </span>  
+        </div>
+
+        <div id="line-left">
+            <span id="head" style="background-image: url(./img/.extra/arknights/头像_艾丽妮.png);"> </span>
+            <span id="text">
+                <span id="name">艾丽妮</span>
+                <span id="message">开门！伊比利亚审判庭</span>
+            </span>  
+        </div>
+        
+        <div id="line-left">
+            <span id="head" style="background-image: url(./img/.extra/arknights/头像_斥罪.png);"> </span>
+            <span id="text">
+                <span id="name">斥罪</span>
+                <span id="message">你有权保持沉默 但接下来你所说的每一句话 都将成为呈堂证供！ </span>
+            </span>  
+        </div>
+
+        <div id="line-left">
+            <span id="head" style="background-image: url(./img/.extra/arknights/头像_灰烬.png);"> </span>
+            <span id="text">
+                <span id="name">Ash</span>
+                <span id="message">FBI!</span>
+                <span id="img" style="background-image: url(./img/.extra/arknights/技能_攻坚榴弹.png);"></span>
+                <span id="img" style="background-image: url(./img/.extra/arknights/立绘_灰烬_2.png);"></span>
+            </span>  
+        </div>
+
+
+
+
+
+    
+
+
+    </div>
+</body>
+</html>
+<style>
+    :root{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        --head : 60px;
+        --lineWidth: 600px;
+        --img:240px;
+    }
+    body{
+        background-color: #FEF8E2;
+        display: flex;
+        flex-direction:row ;
+        justify-content: center;
+    }
+    #area{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #line-left{
+        
+        flex-direction: row;
+        justify-content:baseline;
+        display: flex;
+        /* height: calc(--head + (--head/6)); */
+        height: fit-content;
+        width: var(--lineWidth);
+    }
+    #line-right{
+        margin-bottom: 40px;
+        flex-direction: row-reverse;
+        justify-content: end;
+        display: flex;
+        height: fit-content;
+        width: var(--lineWidth);
+    }
+    #text{
+        display: flex;
+        flex-direction: column;
+        /* width: calc(--lineWidth - --head - 20px); */
+        width: 520px;
+    }
+    #line-right #text{
+        align-items: end;
+    }
+    #line-left #text{
+        align-items: start;
+    }
+
+    #head{
+        position: relative;
+        display: flex;
+        /* background-image: ; */
+        background-color: #FEF8E2;
+        border: 10px; 
+        border-radius: 100%;
+        height: var(--head);
+        width: var(--head);
+        margin-left: 10px;
+        margin-right:10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #name{
+        font-size: 15px;
+        color: black;
+        font-weight: bolder;
+    }
+    #message{
+        margin-top: 5px;
+        position: relative;
+        border: 10px;
+        border-radius: 10px;
+        /* border-color: #4C5B6E; */
+        border-color: rgba(255, 255, 255, 0);
+        border-style: solid;
+        width: fit-content;
+        height: 40px;
+        height: fit-content;
+        font-size: 30px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    #line-left #message{
+        background-color: #4C5B6E;
+    }
+
+    #line-right #message{
+        background-color: #4A8ACA;
+    }
+    #img{
+        /* border: #4C5B6E 10px solid; */
+        border: #ffffff 10px solid;
+        border-radius: 10px;
+        /* margin-top: 10px; */
+        margin-bottom: 20px;
+
+        height: var(--img);
+        width: var(--img);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+<script>
+    console.log(String.raw`┳┓•┓•┳┓•┓•    ┳ ┳ ┳ ┳━┓ 
+┣┫┓┃┓┣┫┓┃┓ ━━ ┃ ┃ ┃ ┃ ┃•
+┻┛┗┗┗┻┛┗┗┗    ┗━┛ ┻ ┻━┛• `);
+    console.log(String.raw`  __     _____   ______    _____    ______    ___  __      ___    _____     ___   
+ /  \   / ___ \ / ___  \  / ___ \  / ____ \  /   )/  \    /   )  / ___ \   /   )  
+ \/) ) ( (   ) )\/   )  )( (   ) )( (    \/ / /) |\/) )  / /) | ( (___) ) / /) |  
+   | | ( (___) |    /  / ( (___) || (____  / (_) (_ | | / (_) (_ \     / / (_) (_ 
+   | |  \____  |   /  /   \____  ||  ___ \(____   _)| |(____   _)/ ___ \(____   _)
+   | |       ) |  /  /         ) || (   ) )    ) (  | |     ) ( ( (   ) )    ) (  
+ __) (_/\____) ) /  /    /\____) )( (___) )    | |__) (_    | | ( (___) )    | |  
+ \____/\______/  \_/     \______/  \_____/     (_)\____/    (_)  \_____/     (_)  `);
+    console.log(String.raw`▄▀▀▄ ▀▀▄   ▄▀▀█▄    ▄▀▀▄ ▀▄         ▄█   ▄▀▀█▄▄▄▄   ▄▀▀▄▀▀▀▄     ▄▀▀▀█▀▀▄   ▄▀▀▀▀▄ 
+█   ▀▄ ▄▀  ▐ ▄▀ ▀▄  █  █ █ █   ▄▀▀▀█▀ ▐  ▐  ▄▀   ▐  █   █   █    █    █  ▐  █ █   ▐ 
+▐     █      █▄▄▄█  ▐  █  ▀█  █    █       █▄▄▄▄▄   ▐  █▀▀█▀     ▐   █         ▀▄   
+      █     ▄▀   █    █   █   ▐    █       █    ▌    ▄▀    █        █       ▀▄   █  
+    ▄▀     █   ▄▀   ▄▀   █      ▄   ▀▄    ▄▀▄▄▄▄    █     █       ▄▀         █▀▀▀   
+    █      ▐   ▐    █    ▐       ▀▀▀▀     █    ▐   ▐      ▐      █           ▐      `);
+    console.log(
+        "%cYanjerTS","font-size: 100px; text-shadow: gold 5px 5px 5px"
+        )
+    console.log(
+        "%cBiliblili-UID:1979641484","font-size: 50px; background-color: gold; color: blue; "
+    )
+    function colorBag(){
+    console.log("%c客观消息#4C5B6E","font-size: 100px; background-color:#4C5B6E ")
+    console.log("%c主观消息#4A8ACA","font-size: 100px; background-color:#4A8ACA ")
+    console.log("%c背景#FEF8E2","font-size: 100px; background-color:#FEF8E2 ")
+    console.log("%c","font-size: 100px; background-color: ")
+
+    }
+</script>
